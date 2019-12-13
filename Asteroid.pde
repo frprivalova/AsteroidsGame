@@ -10,21 +10,26 @@ class Asteroid extends Floater{
 		corners = 4;
 		xCorners = new int [corners];
 		yCorners = new int [corners];
-		xCorners[0] = -6;
-		yCorners[0] = -6;
-		xCorners[1] = 6;
-		yCorners[1] = 6;
-		xCorners[2] = 6;
-		yCorners[2] = -6;
-		xCorners[3] = -6;
-		yCorners[3] = 6;
+		xCorners[0] = -10;
+		yCorners[0] = -10;
+		xCorners[1] =10;
+		yCorners[1] =10;
+		xCorners[2] = 10;
+		yCorners[2] = -10;
+		xCorners[3] = -10;
+		yCorners[3] = 10;
 		myColor = color(30);
 	}
 	public void move(){
 		turn(rot);
 		super.move();
 	}
-	
+	public double getX(){
+		return myCenterX;
+	}
+	public double getY(){
+		return myCenterY;
+	}
 }
 
 
